@@ -23,7 +23,7 @@ const TopSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/fixtures/2/")
+    axios.get(" https://7fa6-41-81-196-5.ngrok-free.app/api/fixtures/2/")
       .then((response) => {
         setMatch(response.data);
         setLoading(false);
@@ -99,7 +99,7 @@ const FixturesSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/fixtures/")
+    axios.get(" https://7fa6-41-81-196-5.ngrok-free.app/api/fixtures/")
       .then((response) => {
         setFixtures(response.data);
         setLoading(false);
@@ -209,7 +209,7 @@ const NewsSection = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/news/")
+    axios.get(" https://7fa6-41-81-196-5.ngrok-free.app/api/news/")
       .then(response => {
         setNews(response.data);
       })
@@ -339,7 +339,7 @@ const LiveMatchSection = () => {
 
   useEffect(() => {
     // Fetch live match data from the backend API
-    axios.get("http://127.0.0.1:8000/api/live-match/")
+    axios.get(" https://7fa6-41-81-196-5.ngrok-free.app/live-match/")
       .then((response) => {
         const matches = response.data;
 
